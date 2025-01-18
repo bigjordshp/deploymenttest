@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new message</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Submit a New Message</h1>
+  <form action="/" method="POST">
+    <label for="text">Message:</label>
+    <input type="text" id="text" name="text" required
+    value="<%= locals.text %>">
+    <br><br>
+    
+    <label for="user">User:</label>
+    <input type="text" id="user" name="user" required
+    value="<%= locals.user %>">
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/">Go back to the home page</a>
+</body>
+</html>
